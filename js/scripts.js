@@ -34,6 +34,6 @@ $(document).ready(function(){
 
     var inputResult = $("#numOne").val();
     // alert(inputResult);
-    $('body').append(`<div><p>${inputResult}</p></div>`);
+    $('body').append(`<div class="outputMargin"><p>${inputResult}</p></div>`);
   });
 });
