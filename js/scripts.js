@@ -6,15 +6,15 @@ function numberRange(inputResult) {
   var three = "I'm sorry, Dave. I'm afraid I can't do that."
     for (var i=0; i <= inputResult; i++) {
       // alert("this is working");
-      userNumber = inputResult.toString();
-      // console.log(userNumber);
-      if (userNumber.includes("1")) {
+      var userNumber = inputResult.toString();
+      alert("userNumber");
+      if (userNumber.includes(1)) {
         // console.log("yes");
         inputRange.push("Beep!");
-      } else if (userNumber.includes("2")) {
+      } else if (userNumber.includes(2)) {
         // console.log("yes");
         inputRange.push("Boop!");
-      } else if (userNumber.includes("3")) {
+      } else if (userNumber.includes(3)) {
         // console.log("yes");
         inputRange.push("I'm sorry, Dave. I'm afraid I can't do that.");
       } else {
@@ -28,12 +28,12 @@ function numberRange(inputResult) {
    
 
 //start user interface logic
-$(document).ready(function(){
-  $("form").submit(function(event){
-    event.preventDefault();
+// $(document).ready(function(){
+//   $("form").submit(function(event){
+//     event.preventDefault();
 
-    var inputResult = $("#numOne").val();
-    // alert(inputResult);
-    $('body').append(`<div class="outputMargin"><p>${inputResult}</p></div>`);
-  });
-});
+//     var inputResult = $("#numOne").val();
+//     // alert(inputResult);
+//     $('body').append(`<div class="outputMargin"><p>${inputResult}</p></div>`);
+//   });
+// });
