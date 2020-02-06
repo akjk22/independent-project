@@ -4,7 +4,7 @@ function numberRange(inputResult) {
   var one = "Beep!";
   var two = "Boop!";
   var three = "I'm sorry, Dave. I'm afraid I can't do that."
-    for (var i=0; i <= inputResult; index++) {
+    for (var i=0; i <= inputResult; i++) {
       // alert("this is working");
       userNumber = inputResult.toString();
       // console.log(userNumber);
@@ -21,7 +21,7 @@ function numberRange(inputResult) {
         // console.log("yes");
         inputRange.push(i.toString());
       }
-      return inputResult;
+      return inputRange;
     } 
    
 }
@@ -31,8 +31,9 @@ function numberRange(inputResult) {
 $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
-    // alert("this is working!")
-    var inputResult = parseInt($("#numOne").val());
-    $("#hidden").append("<p>[" + numberRange(inputResult) + "]<p>");
+
+    var inputResult = $("#numOne").val();
+    // alert(inputResult);
+    $('body').append(`<div><p>${inputResult}</p></div>`);
   });
 });
