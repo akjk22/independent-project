@@ -1,23 +1,26 @@
 function numberRange(input) {
   var inputRange = [];
-  // var one = "Beep!";
-  // var two = "Boop!";
-  // var three = "I'm sorry, Dave. I'm afraid I can't do that."
-  for (var i=0; i <= input; i++) {
-    // alert("this is working");
-    var inputString = input.toString();
 
-    // alert("userNumber");
-    if (i % 3 === 0 && i !== 0) {
-        inputRange.push("yo");
-       } else if (inputString.includes("1")) {
-         inputRange.push("Boop!");
-       } else if (inputString.includes("2")) {
-        inputRange.push("Beep!");
+  for (var i=0; i <= input; i++) {
+    if (i.toString().includes("3")) {
+        inputRange.push(" I'm sorry, Dave. I'm afraid I can't do that.");
+       } else if (i.toString().includes("2")) {
+         inputRange.push(" Boop!");
+       } else if (i.toString().includes("1")) {
+        inputRange.push(" Beep!");
        } else {
-         inputRange.push(inputString);
+         inputRange.push(i);
        }
     } 
     return inputRange
   }
-numberRange(2);
+
+
+// start user interface logic
+$(document).ready(function(){
+  $("form").submit(function(event){
+    event.preventDefault();
+    var input = parseInt($("#numOne").val());
+    $('body').append(`<div class="outputMargin"><p>${numberRange(input)}</p></div>`);
+  });
+});
