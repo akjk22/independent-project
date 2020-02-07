@@ -21,6 +21,8 @@ $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
     var input = parseInt($("#numOne").val());
+    var input1 = 5
     $('body').append(`<div class="outputMargin"><p>${numberRange(input)}</p></div>`);
+    $('body').append(`<div class="outputMargin"><p>${"The Jackson Five"}</p><img src="img/jacksonfive.jpg" alt="The Jackson Five"/></div>`);
   });
 });
