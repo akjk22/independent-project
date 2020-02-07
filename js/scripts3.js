@@ -7,18 +7,17 @@ function numberRange(input) {
     // alert("this is working");
     var inputString = input.toString();
     // alert("userNumber");
-    if (inputString.includes(1)) {
-      // console.log("yes");
-      inputRange.push('Beep!');
-      console.log(inputRange);
-       } else if (inputString.includes(2)) {
-       // console.log("yes");
-         inputRange.push('Boop!');
-       } else (inputString.includes(3)) 
-         inputRange.push('yo');
+    if (i.includes(3)) {
+        inputRange.push("yo");
+       } else if (i.includes(2)) {
+         inputRange.push("Boop!");
+       } else if (i.includes(1)) { 
+        inputRange.push("Beep!");
+       
+       } else {
+         inputRange.push(i);
        }
-       console.log(input)
-       return input;
     } 
-
-    numberRange(1);
+    return input
+    numberRange(2);
+  }
