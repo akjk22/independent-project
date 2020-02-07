@@ -9,15 +9,16 @@ function numberRange(input) {
     // alert("userNumber");
     if (inputString.includes(1)) {
       // console.log("yes");
-      inputRange.push("Beep!");
+      inputRange.push('Beep!');
+      console.log(inputRange);
        } else if (inputString.includes(2)) {
        // console.log("yes");
-         inputRange.push("Boop!");
+         inputRange.push('Boop!');
        } else (inputString.includes(3)) 
-         inputRange.push("yo");
+         inputRange.push('yo');
        }
        console.log(input)
        return input;
     } 
 
-    numberRange(5)
+    numberRange(1);

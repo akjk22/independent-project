@@ -21,9 +21,10 @@ function numberRange(input) {
          } else {
            // console.log("yes");
           inputRange.push(input.toString());
+          return input
           }
       // console.log(input);
-      return input;
+      numberRange(3);
     } 
    
 }
