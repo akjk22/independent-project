@@ -24,8 +24,8 @@ $(document).ready(function(){
     var inputFive = 5
     var inputThree = 3
 
-    $('body').append(`<div class="outputMargin"><p>${numberRange(input)}</p></div>`);
-    $('body').append(`<div class="outputMargin"><p>${"The Jackson Five"}</p><img src="img/jacksonfive.jpg" alt="The Jackson Five"/></div>`);
-    $('body').append(`<div class="outputMargin"><p>${"The Answer"}</p><img src="img/ai.jpg" alt="Allen Iverson"/></div>`);
+    $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
+    $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${"The Jackson Five"}</p><img src="img/jacksonfive.jpg" alt="The Jackson Five"/></div>`);
+    $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${"The Answer"}</p><img src="img/ai.jpg" alt="Allen Iverson"/></div>`);
   });
 });
