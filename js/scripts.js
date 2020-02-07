@@ -1,27 +1,29 @@
 //Business Logic
-function numberRange(inputResult) {
+function numberRange(input) {
   var inputRange = [];
-  var one = "Beep!";
-  var two = "Boop!";
-  var three = "I'm sorry, Dave. I'm afraid I can't do that."
-    for (var i=0; i <= inputResult; i++) {
+  // var one = "Beep!";
+  // var two = "Boop!";
+  // var three = "I'm sorry, Dave. I'm afraid I can't do that."
+    for (var i=0; i <= input; i++) {
       // alert("this is working");
-      var userNumber = inputResult.toString();
-      alert("userNumber");
-      if (userNumber.includes(1)) {
+      var inputString = input.toString();
+      // alert("userNumber");
+      if (inputString.includes(1)) {
         // console.log("yes");
         inputRange.push("Beep!");
-      } else if (userNumber.includes(2)) {
-        // console.log("yes");
-        inputRange.push("Boop!");
-      } else if (userNumber.includes(3)) {
-        // console.log("yes");
-        inputRange.push("I'm sorry, Dave. I'm afraid I can't do that.");
-      } else {
-        // console.log("yes");
-        inputRange.push(i.toString());
-      }
-      return inputRange;
+        console.log(inputRange);
+         } else if (inputString.includes(2)) {
+         // console.log("yes");
+           inputRange.push("Boop!");
+         } else if (inputString.includes(3)) {
+           // console.log("yes");
+           inputRange.push("I'm sorry, Dave. I'm afraid I can't do that.");
+         } else {
+           // console.log("yes");
+          inputRange.push(input.toString());
+          }
+      // console.log(input);
+      return input;
     } 
    
 }
