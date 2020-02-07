@@ -7,17 +7,17 @@ function numberRange(input) {
     // alert("this is working");
     var inputString = input.toString();
     // alert("userNumber");
-    if (i.includes(3)) {
+    if (inputString !=0 && i % 3 === 0) {
         inputRange.push("yo");
-       } else if (i.includes(2)) {
+       } else if (inputString === 2) {
          inputRange.push("Boop!");
-       } else if (i.includes(1)) { 
+       } else if (inputString === 1) {
         inputRange.push("Beep!");
-       
        } else {
-         inputRange.push(i);
+         (inputString === 0)
+         inputRange.push(inputString);
        }
     } 
-    return input
-    numberRange(2);
+    return inputRange
   }
+numberRange(2);
