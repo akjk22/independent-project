@@ -36,7 +36,7 @@ _This program will receive any number in an input field that a user fills out. T
 ## Setup/Installation Requirements
 
 * _Git clone repo https://github.com/akjk22/independent-project.git_
-* _Or view on gh-pages_
+* _Or view on gh-pages: https://akjk22.github.io/independent-project/_
 
 ## Support and contact details
 
