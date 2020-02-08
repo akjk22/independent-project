@@ -23,11 +23,13 @@ function numberRange(input) {
 
 // start user interface logic
 $(document).ready(function(){
+
+  $('.f1_container').click(function() {
+    $(this).toggleClass('active');
+  });
   $("form").submit(function(event){
     event.preventDefault();
     var input = parseInt($("#input").val());
-
-
     // $("#resultText").append(numberRange(input));
     $("#resultText").append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
     if (input === 8 || input === 24) {
@@ -41,5 +43,10 @@ $(document).ready(function(){
     // $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
     // $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${"The Jackson Five"}</p><img src="img/jacksonfive.jpg" alt="The Jackson Five"/></div>`);
     // $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${"The Answer"}</p><img src="img/ai.jpg" alt="Allen Iverson"/></div>`);
+  });
+});
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
   });
 });
