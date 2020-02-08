@@ -12,19 +12,19 @@
 }
 #mamba {
   display: none;
-  /* justify-content: center;
-  align-items: center;
-  align-self: center; */
 }
 img {
   display: flex;
   flex-direction: column;
   margin: auto;
+  width: 60%;
 }
 #reveal {
   display: none;
+  margin: auto;
+  
 }
-label, form, h1{
+label, form, h1 {
   width: 100%;
   text-align: center;
 }
