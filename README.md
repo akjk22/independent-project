@@ -6,7 +6,7 @@
 
 ## Description
 
-_This program will receive any number in an input field that a user fills out. The user will see a returned range of numbers starting from 0, all the way up to the number inputted. The results will be displayed in a new div below the submit button. Based on the specs, the values returned may differ. Some numbers have be replaced with a specific string, as detailed in the specs._
+_This program will receive any number in an input field that a user fills out. The user will see a returned range of numbers starting from 0, all the way up to the number inputted. The results will be displayed in a new paragraph, within a hidden div, below the submit button. Based on the specs, the values returned may differ. Some numbers have be replaced with a specific string, as detailed in the specs._
 
 ## Specs
 
@@ -31,23 +31,26 @@ _This program will receive any number in an input field that a user fills out. T
   * _output 1_: "0", "Beep", "Boop", "I'm sorry Dave. I'm afraid I can't do that!"
   * _input 2_: "5"
   * _output 2_: "0", "Beep", "Boop", "I'm sorry Dave. I'm afraid I can't do that!, 4, 5"
+* _There will also be secret numbers revealing an image, text, and animation_
+
 
 
 ## Setup/Installation Requirements
 
 * _Git clone repo https://github.com/akjk22/independent-project.git_
+* _In the VS Code CLI use "open index.html" to view the project in the browser_
 * _Or view on gh-pages: https://akjk22.github.io/independent-project/_
 
 ## Support and contact details
 
-_Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code._
+_If you run into issues with the code email me at andrewswkim47@gmail.com_
 
 ## Technologies Used
 
-_HTML, CSS, Javascript_
+_HTML, CSS, Javascript, JQuery_
 
 ### License
 
-_This project is licensed under the MIT License - see the LICENSE.md file for details_
+_This project is licensed under the MIT License_
 
 Copyright (c) 2016 **_Andrew Kim_**
