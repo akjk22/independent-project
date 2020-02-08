@@ -26,18 +26,15 @@ $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
     var input = parseInt($("#input").val());
-    // var inputFive = 5
-    // var inputThree = numberRange(3);
+
 
     // $("#resultText").append(numberRange(input));
     $("#resultText").append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
-    if (input === 3) {
-    $("#allen").show();
-    } else if (input === 5) {
-      $("jackson").show();
-    }
+  
+    if (input === 8 || 24) {
+      $("#mamba").show();
+    } 
 
-    // console.log(input);
 
     // $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
     // $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${"The Jackson Five"}</p><img src="img/jacksonfive.jpg" alt="The Jackson Five"/></div>`);
