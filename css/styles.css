@@ -34,8 +34,9 @@ label, form, h1 {
 }
 .mambaContainer {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 500px;
+  margin: 0 auto;
   z-index : 1;
 }
 .mambaContainer {
@@ -64,6 +65,6 @@ label, form, h1 {
   box-sizing: border-box;
   color: yellow;
   text-align: center;
-  font-size: 50px;
-  background-color: #000;
+  font-size: 32px;
+  background-color: #6a0dad;
 }
