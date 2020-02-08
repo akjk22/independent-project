@@ -32,9 +32,7 @@ $(document).ready(function(){
     $("#resultText").append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
     if (input === 8 || input === 24) {
       $("#mamba").show();
-      $("#reveal").show().click(function(){
-        $("#flip").slideDown("slow");
-      });
+      $("#reveal").show();
     }
 
     // $("#reveal").click(function(){

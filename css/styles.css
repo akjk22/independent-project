@@ -22,9 +22,7 @@ img {
  #reveal {
   display: none;
   margin: 20px auto 0px auto;
-  border: 10px;
-  background-color: #fff;
-  color: #000;
+  align-items: center;
 }
 label, form, h1 {
   width: 100%;
