@@ -25,12 +25,14 @@ function numberRange(input) {
 $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
-    var input = parseInt($("#numOne").val());
-    var inputFive = 5
-    var inputThree = 3
+    var input = parseInt($("#input").val());
+    // var inputFive = 5
+    var inputThree = numberRange(3);
 
-    $("#hidden1").append(numberRange(input));
-    console.log(input);
+    $("#resultText").append(numberRange(input));
+    $("#allenThree").show(inputThree);
+
+    // console.log(input);
 
     // $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
     // $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${"The Jackson Five"}</p><img src="img/jacksonfive.jpg" alt="The Jackson Five"/></div>`);
