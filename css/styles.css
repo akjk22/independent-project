@@ -19,13 +19,21 @@ img {
   margin: auto;
   width: 60%;
 }
-#reveal {
+ #reveal {
   display: none;
-  margin: auto;
-  
+  margin: 20px auto 0px auto;
+  border: 10px;
+  background-color: #fff;
+  color: #000;
 }
 label, form, h1 {
   width: 100%;
   text-align: center;
 }
+#flip {
+background-color: #fff;
+color: #000;
+display: none;
+}
+
 
