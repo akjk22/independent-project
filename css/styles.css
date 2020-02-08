@@ -1,5 +1,7 @@
-#hidden {
+#hidden1 {
   display: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 .outputMargin {

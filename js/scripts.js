@@ -1,7 +1,11 @@
+// defining our function called numberRange, which will pass input as the argument
 function numberRange(input) {
   var inputRange = [];
-
+  // inputRange is the name of the array, which will later be pushed as a string of values
+  // initialing the for loop and setting its conditions
   for (var i=0; i <= input; i++) {
+    // passing the input through the for loop and changing each input to a string
+    // each iteration will increment by one and display an output in an array factoring in any specific rules in the if else statement
     if (i.toString().includes("3")) {
         inputRange.push(" I'm sorry, Dave. I'm afraid I can't do that.");
        } else if (i.toString().includes("2")) {
@@ -12,6 +16,7 @@ function numberRange(input) {
          inputRange.push(i);
        }
     } 
+    // our function is being called and we are returning the output of values into an empty array defined by inputRange
     return inputRange
   }
 
@@ -24,8 +29,12 @@ $(document).ready(function(){
     var inputFive = 5
     var inputThree = 3
 
-    $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
-    $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${"The Jackson Five"}</p><img src="img/jacksonfive.jpg" alt="The Jackson Five"/></div>`);
-    $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${"The Answer"}</p><img src="img/ai.jpg" alt="Allen Iverson"/></div>`);
+    $("#hidden1").append(numberRange(input));
+    console.log(input);
+
+    // $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
+    // $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${"The Jackson Five"}</p><img src="img/jacksonfive.jpg" alt="The Jackson Five"/></div>`);
+    // $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${"The Answer"}</p><img src="img/ai.jpg" alt="Allen Iverson"/></div>`);
+   
   });
 });
