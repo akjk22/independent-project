@@ -30,10 +30,13 @@ $(document).ready(function(){
 
     // $("#resultText").append(numberRange(input));
     $("#resultText").append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
-  
-    if (input === 8 || 24) {
+    if (input === 8 || input === 24) {
       $("#mamba").show();
-    } 
+      $("#jackson").show()
+  }
+   
+
+    
 
 
     // $('body').append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
