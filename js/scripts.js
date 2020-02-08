@@ -24,7 +24,10 @@ function numberRange(input) {
 // start user interface logic
 $(document).ready(function(){
 
- 
+  $('.mambaContainer').click(function() {
+    $(this).toggleClass('active');
+  });
+
   $("form").submit(function(event){
     event.preventDefault();
     var input = parseInt($("#input").val());
@@ -35,10 +38,7 @@ $(document).ready(function(){
       $("#reveal").show();
     }
 
-    $("img").click(function() {
-      $(this).toggleClass('active');
-    });
-    
+  
     // $("#reveal").click(function(){
     //   $("#flip").slideDown("slow");
     // });
