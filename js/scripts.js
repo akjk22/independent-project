@@ -27,10 +27,15 @@ $(document).ready(function(){
     event.preventDefault();
     var input = parseInt($("#input").val());
     // var inputFive = 5
-    var inputThree = numberRange(3);
+    // var inputThree = numberRange(3);
 
-    $("#resultText").append(numberRange(input));
-    $("#allenThree").show(inputThree);
+    // $("#resultText").append(numberRange(input));
+    $("#resultText").append(`<div class="outputMargin text-white font-weight-bold"><p>${numberRange(input)}</p></div>`);
+    if (input === 3) {
+    $("#allen").show();
+    } else if (input === 5) {
+      $("jackson").show();
+    }
 
     // console.log(input);
 
